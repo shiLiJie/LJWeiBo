@@ -35,7 +35,10 @@ class WelcomeViewController: UIViewController {
             // 强制更新约束
             self.view.layoutIfNeeded()
             
+            
             }) { (_) -> Void in
+                //这里接收 appdelegate 里发过来的通知,调用方法判断是否切换控制器
+             NSNotificationCenter.defaultCenter().postNotificationName(SLJSwitchVCID, object: true)
                 
         }
     }

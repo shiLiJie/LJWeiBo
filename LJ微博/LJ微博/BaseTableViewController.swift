@@ -11,7 +11,7 @@ import UIKit
 class BaseTableViewController: UITableViewController,VisitorLoginViewDelegate {
 
 
-    var loginon = false
+    var loginon = UserAccount.userLogon
     var loginView: LoginView?
     override func loadView() {
         loginon ? super.loadView() : setView()

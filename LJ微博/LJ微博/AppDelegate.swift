@@ -8,6 +8,8 @@
 
 import UIKit
 
+let SLJSwitchVCID = "SLJSwitchVCID"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -19,11 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setupAppearance()
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "switchViewControllor:", name: SLJSwitchVCID, object: nil)
+        
+        
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         window?.backgroundColor = UIColor.whiteColor()
         
-        window?.rootViewController = MainViewController()
+        window?.rootViewController = defaultVC()
         
         window?.makeKeyAndVisible()
                 
@@ -31,7 +36,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
+    
+    func switchViewControllor(n: NSNotification) {
+        let mainVc = n.object as! Bool
+        window?.rootViewController =  mainVc ? MainViewController() : WelcomeViewController()
+    }
+    
+    func defaultVC() -> UIViewController {
+        if UserAccount.userLogon {
+            return WelcomeViewController()
+        }else {
+            return MainViewController()
+        }
+    }
+    
+    
 /// 设置全局外观
     private func setupAppearance() {
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()

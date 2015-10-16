@@ -17,6 +17,7 @@
 		571A94911BC53C62007DB02E /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A94901BC53C62007DB02E /* DiscoverViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		571A94931BC53C71007DB02E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A94921BC53C71007DB02E /* ProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		571A94951BC56E16007DB02E /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A94941BC56E16007DB02E /* BaseTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5774C08E1BD11A5300051CAC /* NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5774C08D1BD11A5300051CAC /* NewFeatureViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		578657AD1BC65140000A4A3A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578657AC1BC6513F000A4A3A /* LoginView.swift */; settings = {ASSET_TAGS = (); }; };
 		57B7EDFD1BCE685900F4F9E5 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7EDFC1BCE685900F4F9E5 /* OAuthViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		57B7EDFF1BCE6B9F00F4F9E5 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7EDFE1BCE6B9F00F4F9E5 /* NetworkTools.swift */; settings = {ASSET_TAGS = (); }; };
@@ -61,6 +62,7 @@
 		571A94901BC53C62007DB02E /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		571A94921BC53C71007DB02E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		571A94941BC56E16007DB02E /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		5774C08D1BD11A5300051CAC /* NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
 		578657AC1BC6513F000A4A3A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		578657AF1BC65574000A4A3A /* LJ微博-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LJ微博-Bridging-Header.h"; sourceTree = "<group>"; };
 		57B7EDFC1BCE685900F4F9E5 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				57B7EE011BCFD22700F4F9E5 /* WelcomeViewController.swift */,
+				5774C08D1BD11A5300051CAC /* NewFeatureViewController.swift */,
 			);
 			name = NewFeature;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				57B7EDFF1BCE6B9F00F4F9E5 /* NetworkTools.swift in Sources */,
 				571A94931BC53C71007DB02E /* ProfileViewController.swift in Sources */,
 				571A94541BC52D8B007DB02E /* AppDelegate.swift in Sources */,
+				5774C08E1BD11A5300051CAC /* NewFeatureViewController.swift in Sources */,
 				571A948B1BC530A4007DB02E /* MainViewController.swift in Sources */,
 				57B7EDFD1BCE685900F4F9E5 /* OAuthViewController.swift in Sources */,
 				571A94951BC56E16007DB02E /* BaseTableViewController.swift in Sources */,

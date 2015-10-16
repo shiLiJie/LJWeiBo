@@ -88,9 +88,15 @@ class OAuthViewController: UIViewController, UIWebViewDelegate {
                     return
                 }
                 print("OK")
+                
+                NSNotificationCenter.defaultCenter().postNotificationName(SLJSwitchVCID, object: false)
+                
+                 self.close()
+                
             })
         }
     }
+    
     
     /// 网络出错处理
     private func netError() {
