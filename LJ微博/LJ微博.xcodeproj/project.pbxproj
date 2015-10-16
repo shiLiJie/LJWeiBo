@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		571A94541BC52D8B007DB02E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A94531BC52D8B007DB02E /* AppDelegate.swift */; };
+		571A945B1BC52D8B007DB02E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571A945A1BC52D8B007DB02E /* Assets.xcassets */; };
+		571A94691BC52D8B007DB02E /* LJ__Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A94681BC52D8B007DB02E /* LJ__Tests.swift */; };
+		571A94741BC52D8B007DB02E /* LJ__UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A94731BC52D8B007DB02E /* LJ__UITests.swift */; };
+		571A948B1BC530A4007DB02E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A948A1BC530A4007DB02E /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		571A948D1BC53BFE007DB02E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A948C1BC53BFE007DB02E /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		571A948F1BC53C4B007DB02E /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A948E1BC53C4B007DB02E /* MessageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		571A94911BC53C62007DB02E /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A94901BC53C62007DB02E /* DiscoverViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		571A94931BC53C71007DB02E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A94921BC53C71007DB02E /* ProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		571A94951BC56E16007DB02E /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A94941BC56E16007DB02E /* BaseTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		578657AD1BC65140000A4A3A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578657AC1BC6513F000A4A3A /* LoginView.swift */; settings = {ASSET_TAGS = (); }; };
+		57B7EDFD1BCE685900F4F9E5 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7EDFC1BCE685900F4F9E5 /* OAuthViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		57B7EDFF1BCE6B9F00F4F9E5 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7EDFE1BCE6B9F00F4F9E5 /* NetworkTools.swift */; settings = {ASSET_TAGS = (); }; };
+		57B7EE021BCFD22700F4F9E5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7EE011BCFD22700F4F9E5 /* WelcomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		57C845851BCBCDF2002704F7 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C845841BCBCDF2002704F7 /* UserAccount.swift */; settings = {ASSET_TAGS = (); }; };
+		BD53E0F25494D6A0D014E189 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FEA193E12D53BF0655901C /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		571A94651BC52D8B007DB02E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 571A94481BC52D8B007DB02E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 571A944F1BC52D8B007DB02E;
+			remoteInfo = "LJ微博";
+		};
+		571A94701BC52D8B007DB02E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 571A94481BC52D8B007DB02E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 571A944F1BC52D8B007DB02E;
+			remoteInfo = "LJ微博";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14557940C80636430C253237 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3DCFC3D020666C13387ACC14 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		571A94501BC52D8B007DB02E /* LJ微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LJ微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		571A94531BC52D8B007DB02E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		571A945A1BC52D8B007DB02E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		571A945F1BC52D8B007DB02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		571A94641BC52D8B007DB02E /* LJ微博Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LJ微博Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		571A94681BC52D8B007DB02E /* LJ__Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJ__Tests.swift; sourceTree = "<group>"; };
+		571A946A1BC52D8B007DB02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		571A946F1BC52D8B007DB02E /* LJ微博UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LJ微博UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		571A94731BC52D8B007DB02E /* LJ__UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJ__UITests.swift; sourceTree = "<group>"; };
+		571A94751BC52D8B007DB02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		571A948A1BC530A4007DB02E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		571A948C1BC53BFE007DB02E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		571A948E1BC53C4B007DB02E /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		571A94901BC53C62007DB02E /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		571A94921BC53C71007DB02E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		571A94941BC56E16007DB02E /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		578657AC1BC6513F000A4A3A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		578657AF1BC65574000A4A3A /* LJ微博-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LJ微博-Bridging-Header.h"; sourceTree = "<group>"; };
+		57B7EDFC1BCE685900F4F9E5 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		57B7EDFE1BCE6B9F00F4F9E5 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		57B7EE011BCFD22700F4F9E5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		57C845841BCBCDF2002704F7 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		A3FEA193E12D53BF0655901C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		571A944D1BC52D8B007DB02E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD53E0F25494D6A0D014E189 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571A94611BC52D8B007DB02E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571A946C1BC52D8B007DB02E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		571A94471BC52D8B007DB02E = {
+			isa = PBXGroup;
+			children = (
+				571A94521BC52D8B007DB02E /* LJ微博 */,
+				571A94671BC52D8B007DB02E /* LJ微博Tests */,
+				571A94721BC52D8B007DB02E /* LJ微博UITests */,
+				571A94511BC52D8B007DB02E /* Products */,
+				7602AAD44BA95B8172A80E9D /* Pods */,
+				E3696676B9FB321B4030193E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		571A94511BC52D8B007DB02E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				571A94501BC52D8B007DB02E /* LJ微博.app */,
+				571A94641BC52D8B007DB02E /* LJ微博Tests.xctest */,
+				571A946F1BC52D8B007DB02E /* LJ微博UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		571A94521BC52D8B007DB02E /* LJ微博 */ = {
+			isa = PBXGroup;
+			children = (
+				571A94811BC52E9D007DB02E /* Classse */,
+				571A94531BC52D8B007DB02E /* AppDelegate.swift */,
+				571A945A1BC52D8B007DB02E /* Assets.xcassets */,
+				571A945F1BC52D8B007DB02E /* Info.plist */,
+			);
+			path = "LJ微博";
+			sourceTree = "<group>";
+		};
+		571A94671BC52D8B007DB02E /* LJ微博Tests */ = {
+			isa = PBXGroup;
+			children = (
+				571A94681BC52D8B007DB02E /* LJ__Tests.swift */,
+				571A946A1BC52D8B007DB02E /* Info.plist */,
+			);
+			path = "LJ微博Tests";
+			sourceTree = "<group>";
+		};
+		571A94721BC52D8B007DB02E /* LJ微博UITests */ = {
+			isa = PBXGroup;
+			children = (
+				571A94731BC52D8B007DB02E /* LJ__UITests.swift */,
+				571A94751BC52D8B007DB02E /* Info.plist */,
+			);
+			path = "LJ微博UITests";
+			sourceTree = "<group>";
+		};
+		571A94811BC52E9D007DB02E /* Classse */ = {
+			isa = PBXGroup;
+			children = (
+				571A94821BC52EAD007DB02E /* Model(业务模型) */,
+				571A94831BC52EE8007DB02E /* Modal(功能模块) */,
+				571A94841BC52F06007DB02E /* Tools(工具) */,
+			);
+			name = Classse;
+			sourceTree = "<group>";
+		};
+		571A94821BC52EAD007DB02E /* Model(业务模型) */ = {
+			isa = PBXGroup;
+			children = (
+				57C845841BCBCDF2002704F7 /* UserAccount.swift */,
+			);
+			name = "Model(业务模型)";
+			sourceTree = "<group>";
+		};
+		571A94831BC52EE8007DB02E /* Modal(功能模块) */ = {
+			isa = PBXGroup;
+			children = (
+				57B7EE001BCFD20200F4F9E5 /* NewFeature */,
+				57B7EDFB1BCE682600F4F9E5 /* OAuth */,
+				571A94891BC52F2D007DB02E /* Main */,
+				571A94881BC52F29007DB02E /* Home */,
+				571A94871BC52F26007DB02E /* Message */,
+				571A94861BC52F23007DB02E /* Discover */,
+				571A94851BC52F1F007DB02E /* Profile */,
+			);
+			name = "Modal(功能模块)";
+			sourceTree = "<group>";
+		};
+		571A94841BC52F06007DB02E /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				57B7EDFE1BCE6B9F00F4F9E5 /* NetworkTools.swift */,
+			);
+			name = "Tools(工具)";
+			sourceTree = "<group>";
+		};
+		571A94851BC52F1F007DB02E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				571A94921BC53C71007DB02E /* ProfileViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		571A94861BC52F23007DB02E /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				571A94901BC53C62007DB02E /* DiscoverViewController.swift */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		571A94871BC52F26007DB02E /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				571A948E1BC53C4B007DB02E /* MessageViewController.swift */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		571A94881BC52F29007DB02E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				571A948C1BC53BFE007DB02E /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		571A94891BC52F2D007DB02E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				578657AF1BC65574000A4A3A /* LJ微博-Bridging-Header.h */,
+				571A948A1BC530A4007DB02E /* MainViewController.swift */,
+				571A94941BC56E16007DB02E /* BaseTableViewController.swift */,
+				578657AC1BC6513F000A4A3A /* LoginView.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		57B7EDFB1BCE682600F4F9E5 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				57B7EDFC1BCE685900F4F9E5 /* OAuthViewController.swift */,
+			);
+			name = OAuth;
+			sourceTree = "<group>";
+		};
+		57B7EE001BCFD20200F4F9E5 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				57B7EE011BCFD22700F4F9E5 /* WelcomeViewController.swift */,
+			);
+			name = NewFeature;
+			sourceTree = "<group>";
+		};
+		7602AAD44BA95B8172A80E9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14557940C80636430C253237 /* Pods.debug.xcconfig */,
+				3DCFC3D020666C13387ACC14 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E3696676B9FB321B4030193E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3FEA193E12D53BF0655901C /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		571A944F1BC52D8B007DB02E /* LJ微博 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 571A94781BC52D8B007DB02E /* Build configuration list for PBXNativeTarget "LJ微博" */;
+			buildPhases = (
+				8A212E0C03F0EB914532ADF6 /* Check Pods Manifest.lock */,
+				571A944C1BC52D8B007DB02E /* Sources */,
+				571A944D1BC52D8B007DB02E /* Frameworks */,
+				571A944E1BC52D8B007DB02E /* Resources */,
+				0DFFCC5068075560E2FF450F /* Embed Pods Frameworks */,
+				B61719EECC69EEFA43C80B20 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LJ微博";
+			productName = "LJ微博";
+			productReference = 571A94501BC52D8B007DB02E /* LJ微博.app */;
+			productType = "com.apple.product-type.application";
+		};
+		571A94631BC52D8B007DB02E /* LJ微博Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 571A947B1BC52D8B007DB02E /* Build configuration list for PBXNativeTarget "LJ微博Tests" */;
+			buildPhases = (
+				571A94601BC52D8B007DB02E /* Sources */,
+				571A94611BC52D8B007DB02E /* Frameworks */,
+				571A94621BC52D8B007DB02E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				571A94661BC52D8B007DB02E /* PBXTargetDependency */,
+			);
+			name = "LJ微博Tests";
+			productName = "LJ微博Tests";
+			productReference = 571A94641BC52D8B007DB02E /* LJ微博Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		571A946E1BC52D8B007DB02E /* LJ微博UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 571A947E1BC52D8B007DB02E /* Build configuration list for PBXNativeTarget "LJ微博UITests" */;
+			buildPhases = (
+				571A946B1BC52D8B007DB02E /* Sources */,
+				571A946C1BC52D8B007DB02E /* Frameworks */,
+				571A946D1BC52D8B007DB02E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				571A94711BC52D8B007DB02E /* PBXTargetDependency */,
+			);
+			name = "LJ微博UITests";
+			productName = "LJ微博UITests";
+			productReference = 571A946F1BC52D8B007DB02E /* LJ微博UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		571A94481BC52D8B007DB02E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = slj;
+				TargetAttributes = {
+					571A944F1BC52D8B007DB02E = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					571A94631BC52D8B007DB02E = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 571A944F1BC52D8B007DB02E;
+					};
+					571A946E1BC52D8B007DB02E = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 571A944F1BC52D8B007DB02E;
+					};
+				};
+			};
+			buildConfigurationList = 571A944B1BC52D8B007DB02E /* Build configuration list for PBXProject "LJ微博" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 571A94471BC52D8B007DB02E;
+			productRefGroup = 571A94511BC52D8B007DB02E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				571A944F1BC52D8B007DB02E /* LJ微博 */,
+				571A94631BC52D8B007DB02E /* LJ微博Tests */,
+				571A946E1BC52D8B007DB02E /* LJ微博UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		571A944E1BC52D8B007DB02E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571A945B1BC52D8B007DB02E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571A94621BC52D8B007DB02E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571A946D1BC52D8B007DB02E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DFFCC5068075560E2FF450F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A212E0C03F0EB914532ADF6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B61719EECC69EEFA43C80B20 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		571A944C1BC52D8B007DB02E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57C845851BCBCDF2002704F7 /* UserAccount.swift in Sources */,
+				57B7EDFF1BCE6B9F00F4F9E5 /* NetworkTools.swift in Sources */,
+				571A94931BC53C71007DB02E /* ProfileViewController.swift in Sources */,
+				571A94541BC52D8B007DB02E /* AppDelegate.swift in Sources */,
+				571A948B1BC530A4007DB02E /* MainViewController.swift in Sources */,
+				57B7EDFD1BCE685900F4F9E5 /* OAuthViewController.swift in Sources */,
+				571A94951BC56E16007DB02E /* BaseTableViewController.swift in Sources */,
+				571A948F1BC53C4B007DB02E /* MessageViewController.swift in Sources */,
+				571A948D1BC53BFE007DB02E /* HomeViewController.swift in Sources */,
+				57B7EE021BCFD22700F4F9E5 /* WelcomeViewController.swift in Sources */,
+				578657AD1BC65140000A4A3A /* LoginView.swift in Sources */,
+				571A94911BC53C62007DB02E /* DiscoverViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571A94601BC52D8B007DB02E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571A94691BC52D8B007DB02E /* LJ__Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571A946B1BC52D8B007DB02E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571A94741BC52D8B007DB02E /* LJ__UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		571A94661BC52D8B007DB02E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 571A944F1BC52D8B007DB02E /* LJ微博 */;
+			targetProxy = 571A94651BC52D8B007DB02E /* PBXContainerItemProxy */;
+		};
+		571A94711BC52D8B007DB02E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 571A944F1BC52D8B007DB02E /* LJ微博 */;
+			targetProxy = 571A94701BC52D8B007DB02E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		571A94761BC52D8B007DB02E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		571A94771BC52D8B007DB02E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		571A94791BC52D8B007DB02E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14557940C80636430C253237 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "LJ微博/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-00.LJ--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LJ微博/LJ微博-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		571A947A1BC52D8B007DB02E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DCFC3D020666C13387ACC14 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "LJ微博/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-00.LJ--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LJ微博/LJ微博-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		571A947C1BC52D8B007DB02E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "LJ微博Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-00.LJ--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LJ微博.app/LJ微博";
+			};
+			name = Debug;
+		};
+		571A947D1BC52D8B007DB02E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "LJ微博Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-00.LJ--Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LJ微博.app/LJ微博";
+			};
+			name = Release;
+		};
+		571A947F1BC52D8B007DB02E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "LJ微博UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-00.LJ--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "LJ微博";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		571A94801BC52D8B007DB02E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "LJ微博UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-00.LJ--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "LJ微博";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		571A944B1BC52D8B007DB02E /* Build configuration list for PBXProject "LJ微博" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571A94761BC52D8B007DB02E /* Debug */,
+				571A94771BC52D8B007DB02E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		571A94781BC52D8B007DB02E /* Build configuration list for PBXNativeTarget "LJ微博" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571A94791BC52D8B007DB02E /* Debug */,
+				571A947A1BC52D8B007DB02E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		571A947B1BC52D8B007DB02E /* Build configuration list for PBXNativeTarget "LJ微博Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571A947C1BC52D8B007DB02E /* Debug */,
+				571A947D1BC52D8B007DB02E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		571A947E1BC52D8B007DB02E /* Build configuration list for PBXNativeTarget "LJ微博UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571A947F1BC52D8B007DB02E /* Debug */,
+				571A94801BC52D8B007DB02E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 571A94481BC52D8B007DB02E /* Project object */;
+}
