@@ -28,8 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.backgroundColor = UIColor.whiteColor()
         
-//        window?.rootViewController = defaultVC()
-        window?.rootViewController = NewFeatureViewController()
+        window?.rootViewController = defaultVC()
+//        window?.rootViewController = NewFeatureViewController()
         
         window?.makeKeyAndVisible()
                 
