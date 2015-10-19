@@ -19,7 +19,7 @@ class WelcomeViewController: UIViewController {
         
         prepareUI()
         //加载用户头像
-        if let urlString = UserAccount.loadAccount()?.avatar_large {
+        if let urlString = UserAccount.sharedAccount?.avatar_large {
             iconView.sd_setImageWithURL(NSURL(string: urlString))
         }
     }

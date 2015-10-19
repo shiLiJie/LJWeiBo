@@ -19,7 +19,7 @@ class UserAccount: NSObject, NSCoding {
     
     /// 用户是否登录标记
     class var userLogon: Bool {
-        return loadAccount() != nil
+        return sharedAccount != nil
     }
     
     /// 用于调用access_token，接口获取授权后的access token
@@ -97,7 +97,7 @@ class UserAccount: NSObject, NSCoding {
     */
     /// 静态的用户账户属性
     private static var userAccount: UserAccount?
-    class func loadAccount() -> UserAccount? {
+    class var sharedAccount: UserAccount? {
         
         // 1. 判断账户是否存在
         if userAccount == nil {

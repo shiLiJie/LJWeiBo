@@ -26,12 +26,13 @@ private enum HMNetworkError: Int {
         }
     }
     
-    //根据枚举类型,返回相对应的错误信息
+    /// 根据枚举类型，返回对应的错误
     private func error() -> NSError {
-        return NSError(domain: HMErrorDomainName, code: rawValue, userInfo:[HMErrorDomainName:errorDescrption])
+        return NSError(domain: HMErrorDomainName, code: rawValue, userInfo: [HMErrorDomainName: errorDescrption])
     }
 }
- /// 网络访问方法
+
+/// 网络访问方法
 private enum HMNetworkMethod: String {
     case GET = "GET"
     case POST = "POST"
@@ -39,16 +40,15 @@ private enum HMNetworkMethod: String {
 
 class NetworkTools: AFHTTPSessionManager {
     
-    // 应用程序信息
-    private let clientId = "4169469586"
-    private let appSecret = "5a3906d9760307291d1ef61b4f5fd5a8"
-    
+    // MARK: - 应用程序信息
+    private let clientId = "3763573571"
+    private let appSecret = "d3e7a54be3676c0d067f252fa5d47c07"
     /// 回调地址
     let redirectUri = "http://www.baidu.com"
+    
     // MARK: - 类型定义
     /// 网络回调类型别名
     typealias HMNetFinishedCallBack = (result: [String: AnyObject]?, error: NSError?)->()
-    
     
     // 单例
     static let sharedTools: NetworkTools = {
@@ -61,6 +61,41 @@ class NetworkTools: AFHTTPSessionManager {
         return tools
         }()
     
+    /// 检查并生成 token 字典
+    private func tokenDict(finished: HMNetFinishedCallBack) -> [String: AnyObject]? {
+        // 判断 token 是否存在
+        if UserAccount.sharedAccount?.access_token == nil {
+            // 错误回调，token 为空
+            let error = HMNetworkError.emptyTokenError.error()
+            
+            print(error)
+            finished(result: nil, error: error)
+            
+            return nil
+        }
+        
+        // 生成 token 字典返回
+        return ["access_token": UserAccount.sharedAccount!.access_token!]
+    }
+    
+    // MARK: - 加载微博数据
+    func loadStatus(finished: HMNetFinishedCallBack) {
+        
+        // 判断 token 是否存在，为 nil 直接返回
+        // guard 是 swift 2.0 的新语法，跟 if let 刚好相反
+        // let 获得的变量，后续可以直接使用，而且一定不为 nil
+        guard let params = tokenDict(finished) else {
+            // params 在此为 nil，一般直接返回
+            // 提示：tokenDict已经做了token为空的错误回调
+            return
+        }
+        
+        // 代码运行至此，params 一定有值
+        let urlString = "2/statuses/home_timeline.json"
+        
+        request(HMNetworkMethod.GET, urlString: urlString, params: params, finished: finished)
+    }
+    
     // MARK: - 加载用户数据
     /// 加载用户信息 － 职责，做网络访问，获取到 dict
     ///
@@ -68,19 +103,14 @@ class NetworkTools: AFHTTPSessionManager {
     /// :param: finished 完成回调
     func loadUserInfo(uid: String, finished: HMNetFinishedCallBack) {
         
-        // 判断 token 是否存在
-        if UserAccount.loadAccount()?.access_token == nil {
-            // 错误回调，token 为空
-            let error = HMNetworkError.emptyTokenError.error()
-            
-            print(error)
-            finished(result: nil, error: error)
-            
+        // guard 不仅可以用 let，而且可以用 var
+        guard var params = tokenDict(finished) else {
+            // params 在此为 nil，一般直接返回
             return
         }
         
         let urlString = "2/users/show.json"
-        let params: [String: AnyObject] = ["access_token": UserAccount.loadAccount()!.access_token!, "uid": uid]
+        params["uid"] = uid
         
         // 发送网络请求
         // 提示：如果参数不正确，首先用 option + click 确认参数类型
@@ -104,11 +134,7 @@ class NetworkTools: AFHTTPSessionManager {
             "code": code,
             "redirect_uri": redirectUri]
         
-        // 测试代码-设置返回的数据格式
-        // responseSerializer = AFHTTPResponseSerializer()
-        
         request(HMNetworkMethod.POST, urlString: urlString, params: params, finished: finished)
-
     }
     
     // MARK: - 封装 AFN 网络方法，便于替换网络访问方法，第三方框架的网络代码全部集中在此

@@ -17,6 +17,8 @@
 		571A94911BC53C62007DB02E /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A94901BC53C62007DB02E /* DiscoverViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		571A94931BC53C71007DB02E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A94921BC53C71007DB02E /* ProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		571A94951BC56E16007DB02E /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A94941BC56E16007DB02E /* BaseTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		576547B11BD3E84D003483AB /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576547B01BD3E84D003483AB /* Status.swift */; settings = {ASSET_TAGS = (); }; };
+		576547B31BD3E85B003483AB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576547B21BD3E85B003483AB /* User.swift */; settings = {ASSET_TAGS = (); }; };
 		5774C08E1BD11A5300051CAC /* NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5774C08D1BD11A5300051CAC /* NewFeatureViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		578657AD1BC65140000A4A3A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578657AC1BC6513F000A4A3A /* LoginView.swift */; settings = {ASSET_TAGS = (); }; };
 		57B7EDFD1BCE685900F4F9E5 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7EDFC1BCE685900F4F9E5 /* OAuthViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -62,6 +64,8 @@
 		571A94901BC53C62007DB02E /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		571A94921BC53C71007DB02E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		571A94941BC56E16007DB02E /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		576547B01BD3E84D003483AB /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		576547B21BD3E85B003483AB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5774C08D1BD11A5300051CAC /* NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
 		578657AC1BC6513F000A4A3A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		578657AF1BC65574000A4A3A /* LJ微博-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LJ微博-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				57C845841BCBCDF2002704F7 /* UserAccount.swift */,
+				576547B01BD3E84D003483AB /* Status.swift */,
+				576547B21BD3E85B003483AB /* User.swift */,
 			);
 			name = "Model(业务模型)";
 			sourceTree = "<group>";
@@ -454,7 +460,9 @@
 				571A948B1BC530A4007DB02E /* MainViewController.swift in Sources */,
 				57B7EDFD1BCE685900F4F9E5 /* OAuthViewController.swift in Sources */,
 				571A94951BC56E16007DB02E /* BaseTableViewController.swift in Sources */,
+				576547B31BD3E85B003483AB /* User.swift in Sources */,
 				571A948F1BC53C4B007DB02E /* MessageViewController.swift in Sources */,
+				576547B11BD3E84D003483AB /* Status.swift in Sources */,
 				571A948D1BC53BFE007DB02E /* HomeViewController.swift in Sources */,
 				57B7EE021BCFD22700F4F9E5 /* WelcomeViewController.swift in Sources */,
 				578657AD1BC65140000A4A3A /* LoginView.swift in Sources */,
