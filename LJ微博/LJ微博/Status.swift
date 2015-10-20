@@ -18,9 +18,26 @@ class Status: NSObject {
     /// 微博来源
     var source: String?
     /// 配图数组
-    var pic_urls: [[String: AnyObject]]?
+    var pic_urls: [[String: AnyObject]]? {
+        didSet {
+        if pic_urls!.count == 0 {
+            return
+        }
+        pictureURLs = [NSURL]()
+        for dict in pic_urls! {
+            if let urlString = dict["thumbnail_pic"] as? String {
+                pictureURLs?.append(NSURL(string: urlString)!)
+        }
+    }
+}
+}
+    /// 配图的URL的数组
+    var pictureURLs: [NSURL]?
     /// 用户
     var user: User?
+    /// 显示微博所需的行高
+    var rowHeight: CGFloat?
+
     /// 加载微博数据 - 返回`微博`数据的数组
     class func loadStatus(finished: (dataList: [Status]?, error: NSError?) -> ()) {
         

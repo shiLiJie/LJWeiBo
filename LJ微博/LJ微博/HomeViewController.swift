@@ -20,6 +20,7 @@ class HomeViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 如果用户没有登录，设置访客视图，返回
         if !UserAccount.userLogon {
         loginView?.setupInfo(true, imageName: "visitordiscover_feed_image_smallicon", message: "关注一些人，回这里看看有什么惊喜")
             return
@@ -32,12 +33,12 @@ class HomeViewController: BaseTableViewController {
         // 注册原型 cell
         tableView.registerClass(StatusCell.self, forCellReuseIdentifier: "Cell")
         // 设置表格的预估行高(方便表格提前计算预估行高，提高性能)
-//        tableView.estimatedRowHeight = 200
-        tableView.rowHeight = 200
+        tableView.estimatedRowHeight = 300
+//        tableView.rowHeight = 200
         // 设置表格自动计算行高
 //        tableView.rowHeight = UITableViewAutomaticDimension
         // 取消分割线
-        //tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.None
     }
     
     /// 加载数据
@@ -65,6 +66,24 @@ class HomeViewController: BaseTableViewController {
         cell.status = statuses![indexPath.row]
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        //获取模型
+        let status = statuses![indexPath.row]
+        if let h = status.rowHeight {
+            return h
+        }
+        // 2. 获取 cell - dequeueReusableCellWithIdentifier 带 indexPath 的函数会调用计算行高的方法
+        // 会造成死循环，在不同版本的 Xcode 中 行高的计算次数不一样！尽量要优化！
+        // 如果不做处理，会非常消耗性能！
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as? StatusCell
+        
+        // 3. 记录并返回计算的行高
+        status.rowHeight = cell!.rowHeight(status)
+        
+        return status.rowHeight!
+        
     }
 
 }
