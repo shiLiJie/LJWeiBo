@@ -76,8 +76,8 @@ class newFeatureCell: UICollectionViewCell {
     }
     /// 按钮点击事件
     func clickStartButton() {
-        print("开始")
-    }
+        print("123")
+        NSNotificationCenter.defaultCenter().postNotificationName(SLJSwitchVCID, object: true)    }
     
     /// 开始按钮动画
     private func startButtonAnim() {
@@ -121,6 +121,7 @@ class newFeatureCell: UICollectionViewCell {
         startButton.translatesAutoresizingMaskIntoConstraints = false
         contentView.addConstraint(NSLayoutConstraint(item: startButton, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: contentView, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0))
         contentView.addConstraint(NSLayoutConstraint(item: startButton, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: contentView, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: -160))
+        startButton.addTarget(self, action: "clickStartButton", forControlEvents: UIControlEvents.TouchUpInside)
 
     }
         //懒加载控件

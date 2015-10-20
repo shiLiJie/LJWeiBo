@@ -56,10 +56,7 @@ class OAuthViewController: UIViewController, UIWebViewDelegate {
             return true
         }
         
-        print("判断参数")
-        print(request.URL?.query)
         if let query = request.URL?.query where query.hasPrefix("code=") {
-            print("获取授权码")
             // 从 query 中截取授权码
             let code = query.substringFromIndex("code=".endIndex)
             // TODO: 换取 TOKEN
@@ -96,7 +93,10 @@ class OAuthViewController: UIViewController, UIWebViewDelegate {
             })
         }
     }
-    
+    deinit {
+        print("88")
+    }
+
     
     /// 网络出错处理
     private func netError() {

@@ -41,8 +41,8 @@ private enum HMNetworkMethod: String {
 class NetworkTools: AFHTTPSessionManager {
     
     // MARK: - 应用程序信息
-    private let clientId = "3763573571"
-    private let appSecret = "d3e7a54be3676c0d067f252fa5d47c07"
+    private let clientId = "4169469586"
+    private let appSecret = "5a3906d9760307291d1ef61b4f5fd5a8"
     /// 回调地址
     let redirectUri = "http://www.baidu.com"
     
