@@ -85,6 +85,14 @@ class HMRefreshControl: UIRefreshControl {
     
 
 class HMRefreshView: UIView {
+    
+    /// 旋转标记
+    private var rotateFlag = false {
+        didSet {
+            rotateTipIcon()
+        }
+    }
+    
     /// 加载图标
     @IBOutlet weak var loadIcon: UIImageView!
     /// 提示视图
@@ -95,5 +103,39 @@ class HMRefreshView: UIView {
     /// 从 xib 加载刷新视图
     class func refreshView() -> HMRefreshView {
         return NSBundle.mainBundle().loadNibNamed("HMRefreshView", owner: nil, options: nil).last as! HMRefreshView
+    }
+    /// 提示图标的旋转
+    private func rotateTipIcon() {
+        // 在块代码动画中，旋转会就近原则，默认顺时针寻找方向
+        let angle = rotateFlag ? CGFloat(M_PI - 0.01) : CGFloat(M_PI + 0.01)
+        
+        UIView.animateWithDuration(0.25) { () -> Void in
+            self.tipIcon.transform = CGAffineTransformRotate(self.tipIcon.transform, angle)
+        }
+    }
+    
+    private func startLoading() {
+        if loadIcon.layer.animationForKey("loadingAnima") != nil {
+        return
+        }
+        
+        //隐藏提示视图
+        tipView.hidden = true
+        
+        //定义动画
+        let anim = CABasicAnimation(keyPath: "transform.rotation")
+        
+        anim.toValue = 2 * M_PI
+        anim.repeatCount = MAXFLOAT
+        anim.duration = 1.0
+        
+        //添加动画
+        tipView.layer.addAnimation(anim, forKey: "loadingAnima")
+    }
+    
+    //停止加载动画
+    private func stopLoading() {
+        tipView.hidden = false
+        loadIcon.layer.removeAllAnimations()
     }
 }

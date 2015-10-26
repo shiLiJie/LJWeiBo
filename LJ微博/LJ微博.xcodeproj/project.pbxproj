@@ -29,6 +29,7 @@
 		576548091BD8FBA9003483AB /* HMRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576548081BD8FBA9003483AB /* HMRefreshControl.swift */; settings = {ASSET_TAGS = (); }; };
 		5765480D1BD8FC74003483AB /* HMRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5765480C1BD8FC74003483AB /* HMRefreshView.xib */; settings = {ASSET_TAGS = (); }; };
 		5774C08E1BD11A5300051CAC /* NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5774C08D1BD11A5300051CAC /* NewFeatureViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5782A4A91BDDD07A00C17D6F /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782A4A81BDDD07A00C17D6F /* ComposeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		578657AD1BC65140000A4A3A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578657AC1BC6513F000A4A3A /* LoginView.swift */; settings = {ASSET_TAGS = (); }; };
 		57B7EDFD1BCE685900F4F9E5 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7EDFC1BCE685900F4F9E5 /* OAuthViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		57B7EDFF1BCE6B9F00F4F9E5 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7EDFE1BCE6B9F00F4F9E5 /* NetworkTools.swift */; settings = {ASSET_TAGS = (); }; };
@@ -85,6 +86,7 @@
 		576548081BD8FBA9003483AB /* HMRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMRefreshControl.swift; sourceTree = "<group>"; };
 		5765480C1BD8FC74003483AB /* HMRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMRefreshView.xib; sourceTree = "<group>"; };
 		5774C08D1BD11A5300051CAC /* NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
+		5782A4A81BDDD07A00C17D6F /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		578657AC1BC6513F000A4A3A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		578657AF1BC65574000A4A3A /* LJ微博-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LJ微博-Bridging-Header.h"; sourceTree = "<group>"; };
 		57B7EDFC1BCE685900F4F9E5 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		571A94831BC52EE8007DB02E /* Modal(功能模块) */ = {
 			isa = PBXGroup;
 			children = (
+				5782A4A71BDDD05400C17D6F /* Compose */,
 				57B7EE001BCFD20200F4F9E5 /* NewFeature */,
 				57B7EDFB1BCE682600F4F9E5 /* OAuth */,
 				571A94891BC52F2D007DB02E /* Main */,
@@ -279,6 +282,14 @@
 				5765480C1BD8FC74003483AB /* HMRefreshView.xib */,
 			);
 			name = Refresh;
+			sourceTree = "<group>";
+		};
+		5782A4A71BDDD05400C17D6F /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				5782A4A81BDDD07A00C17D6F /* ComposeViewController.swift */,
+			);
+			name = Compose;
 			sourceTree = "<group>";
 		};
 		57B7EDFB1BCE682600F4F9E5 /* OAuth */ = {
@@ -499,6 +510,7 @@
 				57C845851BCBCDF2002704F7 /* UserAccount.swift in Sources */,
 				57B7EDFF1BCE6B9F00F4F9E5 /* NetworkTools.swift in Sources */,
 				571A94931BC53C71007DB02E /* ProfileViewController.swift in Sources */,
+				5782A4A91BDDD07A00C17D6F /* ComposeViewController.swift in Sources */,
 				571A94541BC52D8B007DB02E /* AppDelegate.swift in Sources */,
 				5774C08E1BD11A5300051CAC /* NewFeatureViewController.swift in Sources */,
 				571A948B1BC530A4007DB02E /* MainViewController.swift in Sources */,

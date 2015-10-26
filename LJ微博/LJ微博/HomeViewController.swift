@@ -39,6 +39,10 @@ class HomeViewController: BaseTableViewController {
 //        tableView.rowHeight = UITableViewAutomaticDimension
         // 取消分割线
         tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        //添加刷新控制器
+        refreshControl = HMRefreshControl()
+        //添加监听方法
+        refreshControl?.addTarget(self, action: "loadData", forControlEvents: UIControlEvents.ValueChanged)
     }
     
     /// 加载数据

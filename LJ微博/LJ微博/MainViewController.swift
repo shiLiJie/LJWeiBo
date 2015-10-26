@@ -33,7 +33,13 @@ class MainViewController: UITabBarController {
     }
 
      func clickComposedButton() {
-        print(__FUNCTION__)
+        let vc = UserAccount.userLogon ? ComposeViewController() : OAuthViewController()
+        let nav = UINavigationController(rootViewController: vc)
+        presentViewController(nav, animated: true, completion: nil)
+//          navigationController?.pushViewController(nav, animated: true)
+        
+        
+        
     }
     
     //添加所有控制器
@@ -69,6 +75,8 @@ class MainViewController: UITabBarController {
         button.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), forState: UIControlState.Highlighted)
         button.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState: UIControlState.Normal)
         button.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: UIControlState.Highlighted)
+        
+        
         
         self.tabBar.addSubview(button)
         button.addTarget(self, action: "clickComposedButton", forControlEvents: UIControlEvents.TouchUpInside)
