@@ -8,8 +8,92 @@
 
 import UIKit
 
-class HMRefreshControl: UIRefreshControl {
+private let kRefreshPullOffset: CGFloat = -60
 
+
+class HMRefreshControl: UIRefreshControl {
+    
+    // MARK: - 重写结束刷新方法
+    override func endRefreshing() {
+    super.endRefreshing()
+    
+    refreshView.stopLoading()
+    }
+    
+    // MARK: - KVO
+    /**
+    向下拉表格，y 值越来越小
+    向上推表格，y 值越来越大
+    从表格顶部向下拉，y值是负数
+    拽到一定幅度，会自动进入刷新状态
+    */
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+    
+    // 如果y > 0 直接返回
+    if frame.origin.y > 0 {
+    return
+    }
+    
+    // 判断是否开始刷新，如果进入刷新状态，播放加载动画
+    if refreshing {
+    refreshView.startLoading()
+    }
+    
+    if frame.origin.y < kRefreshPullOffset && !refreshView.rotateFlag {
+    print("翻过来")
+    refreshView.rotateFlag = true
+    } else if frame.origin.y > kRefreshPullOffset && refreshView.rotateFlag {
+    print("转过去")
+    refreshView.rotateFlag = false
+    }
+    }
+    
+    // MARK: - 构造函数
+    override init() {
+    super.init()
+    
+    setupUI()
+    }
+    
+    /// 从 xib ／ sb 加载视图之后，做额外的设置
+    required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+    }
+    
+    deinit {
+    self.removeObserver(self, forKeyPath: "frame")
+    }
+    
+    private func setupUI() {
+    // KVO 监听 frame 属性变化
+    self.addObserver(self, forKeyPath: "frame", options: NSKeyValueObservingOptions(rawValue: 0), context: nil)
+    
+    // 隐藏默认的转轮
+    tintColor = UIColor.clearColor()
+    
+    // 添加刷新视图
+    addSubview(refreshView)
+    
+    // 自动布局 - 从 xib 加载的时候，可以直接取到真实的大小
+    refreshView.ff_AlignInner(type: ff_AlignType.CenterCenter, referView: self, size: refreshView.bounds.size)
+    }
+    
+    // MARK: － 懒加载控件
+    private lazy var refreshView: HMRefreshView = HMRefreshView.refreshView()
+    
+}
     
 
+class HMRefreshView: UIView {
+    /// 加载图标
+    @IBOutlet weak var loadIcon: UIImageView!
+    /// 提示视图
+    @IBOutlet weak var tipView: UIView!
+    /// 提示图标
+    @IBOutlet weak var tipIcon: UIImageView!
+    
+    /// 从 xib 加载刷新视图
+    class func refreshView() -> HMRefreshView {
+        return NSBundle.mainBundle().loadNibNamed("HMRefreshView", owner: nil, options: nil).last as! HMRefreshView
+    }
 }
