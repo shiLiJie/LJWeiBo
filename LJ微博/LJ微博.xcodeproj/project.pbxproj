@@ -30,6 +30,7 @@
 		5765480D1BD8FC74003483AB /* HMRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5765480C1BD8FC74003483AB /* HMRefreshView.xib */; settings = {ASSET_TAGS = (); }; };
 		5774C08E1BD11A5300051CAC /* NewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5774C08D1BD11A5300051CAC /* NewFeatureViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		5782A4A91BDDD07A00C17D6F /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782A4A81BDDD07A00C17D6F /* ComposeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5782A4AB1BDE11D000C17D6F /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782A4AA1BDE11D000C17D6F /* UIBarButtonItem+Extension.swift */; settings = {ASSET_TAGS = (); }; };
 		578657AD1BC65140000A4A3A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578657AC1BC6513F000A4A3A /* LoginView.swift */; settings = {ASSET_TAGS = (); }; };
 		57B7EDFD1BCE685900F4F9E5 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7EDFC1BCE685900F4F9E5 /* OAuthViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		57B7EDFF1BCE6B9F00F4F9E5 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7EDFE1BCE6B9F00F4F9E5 /* NetworkTools.swift */; settings = {ASSET_TAGS = (); }; };
@@ -87,6 +88,7 @@
 		5765480C1BD8FC74003483AB /* HMRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMRefreshView.xib; sourceTree = "<group>"; };
 		5774C08D1BD11A5300051CAC /* NewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureViewController.swift; sourceTree = "<group>"; };
 		5782A4A81BDDD07A00C17D6F /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		5782A4AA1BDE11D000C17D6F /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		578657AC1BC6513F000A4A3A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		578657AF1BC65574000A4A3A /* LJ微博-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LJ微博-Bridging-Header.h"; sourceTree = "<group>"; };
 		57B7EDFC1BCE685900F4F9E5 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				57B7EDFE1BCE6B9F00F4F9E5 /* NetworkTools.swift */,
 				576547BF1BD4765D003483AB /* UILabel+Extension.swift */,
 				576547C11BD4766D003483AB /* UIButton+Extension.swift */,
+				5782A4AA1BDE11D000C17D6F /* UIBarButtonItem+Extension.swift */,
 			);
 			name = "Tools(工具)";
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 			files = (
 				57C845851BCBCDF2002704F7 /* UserAccount.swift in Sources */,
 				57B7EDFF1BCE6B9F00F4F9E5 /* NetworkTools.swift in Sources */,
+				5782A4AB1BDE11D000C17D6F /* UIBarButtonItem+Extension.swift in Sources */,
 				571A94931BC53C71007DB02E /* ProfileViewController.swift in Sources */,
 				5782A4A91BDDD07A00C17D6F /* ComposeViewController.swift in Sources */,
 				571A94541BC52D8B007DB02E /* AppDelegate.swift in Sources */,
