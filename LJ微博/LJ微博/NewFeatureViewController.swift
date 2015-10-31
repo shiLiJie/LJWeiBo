@@ -49,6 +49,10 @@ class NewFeatureViewController: UICollectionViewController {
     
         return cell
     }
+    private func xitongcell() {
+        
+    }
+    
     /// 完成显示 cell - indexPath 是之前消失 cell 的 indexPath
     override  func collectionView(collectionView: UICollectionView, didEndDisplayingCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
         // 获取当前显示的 indexPath
